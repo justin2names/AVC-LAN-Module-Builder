@@ -69,8 +69,8 @@ const uint16_t  ADDR_ME = ADDR_HW_CD_CH;	//	See avclan-registers.h for list
 
 // TX LED connected to Pin5  of  PORTD // changed from Pin2  of  PORTC 
 #define TX_LED_DDR		DDRD // changed from DDRC
-#define TX_LED_PORT		PORTC // changed from PORTC
-#define	TX_LED_PIN		PINC // changed from PINC
+#define TX_LED_PORT		PORTD // changed from PORTC
+#define	TX_LED_PIN		PIND // changed from PINC
 #define TX_LED_OUT		5 // changed from 2
 
 // RX LED connected to Pin4  of  PORTD // changed from Pin4  of  PORTC
