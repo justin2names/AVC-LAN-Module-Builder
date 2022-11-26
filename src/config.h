@@ -35,7 +35,7 @@
 * 2 -	14.7456 MHz
 * 3 -	16 MHz
 */
-#define CRYSTAL		2
+#define CRYSTAL		3
 
 
 #ifdef AVC_MASTER
@@ -51,7 +51,7 @@
 /* Define Connections*/
 //#define AVC_I2C
 
-const uint16_t  ADDR_ME = ADDR_DISPLAY_MASTER;	//	See avclan-registers.h for list
+const uint16_t  ADDR_ME = ADDR_HW_CD_CH;	//	See avclan-registers.h for list
 
 #define MAXSENDATTEMP	3
 
@@ -67,16 +67,16 @@ const uint16_t  ADDR_ME = ADDR_DISPLAY_MASTER;	//	See avclan-registers.h for lis
 #define	DATAIN_PIN		PIND
 #define DATAIN			7
 
-// TX LED connected to Pin1  of  PORTC
-#define TX_LED_DDR		DDRC
-#define TX_LED_PORT		PORTC
-#define	TX_LED_PIN		PINC
-#define TX_LED_OUT		2
+// TX LED connected to Pin5  of  PORTD // changed from Pin2  of  PORTC 
+#define TX_LED_DDR		DDRD // changed from DDRC
+#define TX_LED_PORT		PORTC // changed from PORTC
+#define	TX_LED_PIN		PINC // changed from PINC
+#define TX_LED_OUT		5 // changed from 2
 
-// RX LED connected to Pin4  of  PORTC
-#define RX_LED_DDR		DDRC
-#define RX_LED_PORT		PORTC
-#define	RX_LED_PIN		PINC
+// RX LED connected to Pin4  of  PORTD // changed from Pin4  of  PORTC
+#define RX_LED_DDR		DDRD // changed from DDRC
+#define RX_LED_PORT		PORTD // changed from PORTC
+#define	RX_LED_PIN		PIND // changed from PINC
 #define RX_LED_OUT		4
 
 // AZFM board activate
