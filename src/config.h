@@ -67,17 +67,17 @@ const uint16_t  ADDR_ME = ADDR_HW_CD_CH;	//	See avclan-registers.h for list
 #define	DATAIN_PIN		PIND
 #define DATAIN			7
 
-// TX LED connected to Pin5  of  PORTD // changed from Pin2  of  PORTC
-#define TX_LED_DDR		DDRC
-#define TX_LED_PORT		PORTC
-#define	TX_LED_PIN		PINC
-#define TX_LED_OUT		0
+// TX LED connected to Pin5  of  PORTD // changed from Pin0  of  PORTC
+#define TX_LED_DDR		DDRD
+#define TX_LED_PORT		PORTD
+#define	TX_LED_PIN		PIND
+#define TX_LED_OUT		5
 
 // RX LED connected to Pin4  of  PORTD // changed from Pin4  of  PORTC
-#define RX_LED_DDR		DDRC
-#define RX_LED_PORT		PORTC
-#define	RX_LED_PIN		PINC
-#define RX_LED_OUT		1
+#define RX_LED_DDR		DDRD
+#define RX_LED_PORT		PORTD
+#define	RX_LED_PIN		PIND
+#define RX_LED_OUT		4
 
 // AZFM board activate
 #define AZFM_INIT
